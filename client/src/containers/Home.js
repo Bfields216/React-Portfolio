@@ -5,8 +5,12 @@ import { Container } from "reactstrap";
 import meI from "../components/assets/Me.jpg";
 // import Card from "react-bootstrap/Card";
 import { List } from "../components/List";
-// import Navbar from "../components/NavBar";
+import Navbar from "../components/NavBar";
 import Background from "../components/assets/Desert-Nights.jpg";
+import Zoom from 'react-reveal/Zoom';
+import Flip from 'react-reveal/Flip';
+import Roll from 'react-reveal/Roll';
+
 // import { ParallaxProvider } from 'react-scroll-parallax';
 // import { Parallax } from 'react-scroll-parallax';
 import "../App.css";
@@ -17,12 +21,13 @@ class Home extends Component {
   render() {
     return (
       <div style={{ backgroundImage: `url(${Background})` }}>
-        {/* <Navbar /> */}
+        <Navbar />
         {/* const ParallaxImage = () => ( */}
         {/* <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
         <img src={Image} /> */}
-
+        <Roll>
         <div
+       
           className="jumbotron"
           style={{
             color: "white",
@@ -56,6 +61,7 @@ class Home extends Component {
           <br />
           <br />
           <br />
+          
         </div>
         <Container
           style={{
@@ -68,6 +74,7 @@ class Home extends Component {
           {/* <Row>
             <Col  > */}
           <div>
+          <Zoom >
             <h4>FULL-STACK Software Developer from Atlanta, GA.</h4>
             <li>
               <b>Brandon Fields</b>
@@ -100,8 +107,10 @@ class Home extends Component {
                 </font>
               </h4>
             </a>
+            </Zoom>
           </div>
           <section>
+          <Zoom>
             <h3>My Skills</h3>
             <div>
               <h4>
@@ -122,8 +131,11 @@ class Home extends Component {
                   </font>
                 </font>
               </p>
+              
             </div>
+            </Zoom>
           </section>
+          
         </Container>
         {/* </Parallax> ); */}
         <br />
@@ -135,6 +147,7 @@ class Home extends Component {
         <div>
           <br />
           <Container fluid>
+          <Flip>
             <h1 style={{ textAlign: "center", margin: "auto", color: "white" }}>
               About Me
             </h1>
@@ -175,6 +188,7 @@ class Home extends Component {
               </Card.Body>
             </Card> */}
             {/* <br /> */}
+            </Flip>
           </Container>{" "}
         </div>
         <br />
@@ -285,6 +299,56 @@ class Home extends Component {
             </p>
           </div>
         </List>
+        </Roll>
+        <Container
+          style={{
+            border: "solid",
+            margin: "auto",
+            textAlign: "center",
+            color: "white"
+          }}
+        >
+          {/* <Row>
+            <Col  > */}
+          <div>
+          <Zoom >
+            <h4>Contact Me </h4>
+            {/* <li>
+              <b>Brandon Fields</b>
+            </li>
+            <li>
+              <b>02-May-1991</b>
+            </li> */}
+            {/* <li>
+              <b> 216-952-1738 </b>
+            </li> */}
+            {/* <li>
+              <b>Atlanta, Georgia </b>
+            </li> */}
+
+            <li>
+              <a href="mailto:Brandonfields2010@gmail.com">
+                {" "}
+                Brandonfields2010@gmail.com
+              </a>{" "}
+            </li>
+
+            <li>
+              <a href="https://github.com/Bfields216">B-Fields - Github</a>
+            </li>
+
+            <a href="https://drive.google.com/file/d/1wW8Q3gQYmWGft4FhzyvGqLIf-Ov5gwnT/view?usp=sharing">
+              <h4>
+                <font>
+                  <font>View My CV Here</font>
+                </font>
+              </h4>
+            </a>
+            </Zoom>
+          </div>
+          
+          
+        </Container>
       </div>
     );
   }

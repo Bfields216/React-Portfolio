@@ -1,26 +1,45 @@
 import React from "react";
 import "./style.css";
-import { Nav, NavItem, NavLink } from 'reactstrap';
+import { Nav, NavItem, NavLink } from "reactstrap";
+
+import { GoMarkGithub } from "react-icons/go";
+import { AiFillLinkedin } from "react-icons/ai";
+import { FaHome } from "react-icons/fa";
+
 
 // Using the datalist element we can create autofill suggestions based on the props.breeds array
 function Navbar(props) {
   return (
-      <div>
-        <Nav tabs>
+    <div style={{backgroundcolor:'transparent'}}>
+      <Nav tabs>
         <NavItem>
-        <NavLink href="/" active>Home</NavLink>
-      </NavItem>
-          <NavItem>
-            <NavLink href="/About" active>About</NavLink>
-          </NavItem>
-          <NavItem>
-          <NavLink href="/Register" active>Contact</NavLink>
+        <NavLink
+         style={{backgroundcolor: 'transparent', width: '72px;', height: '50px;' }}   href="/" active><FaHome />
+           
+          </NavLink>
         </NavItem>
-  
+        {/* <NavItem>
+          <NavLink href="/About" active>
+            About
+          </NavLink>
+        </NavItem> */}
+        {/* <NavItem>
+          <NavLink href="/Register" active>
+            Contact
+          </NavLink> */}
+        {/* </NavItem> */}
+        <NavLink 
+          href="https://www.linkedin.com/in/brandon-fields-932015b1/"
+          active
+        ><AiFillLinkedin/>
+          
+        </NavLink>
+        <NavLink  href="https://github.com/Bfields216" active><GoMarkGithub />   
         
-          </Nav>
-        </div>
-      );
-    }
+        </NavLink>
+      </Nav>
+    </div>
+  );
+}
 
 export default Navbar;
