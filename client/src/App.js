@@ -1,26 +1,34 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
+// import { ParallaxProvider } from 'react-scroll-parallax';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "react-bootstrap/Navbar";
 import Home from "./containers/Home";
-import Nav from "./components/Nav"
-// import Navbar from 'react-bootstrap/Navbar'
-import 'bootstrap/dist/css/bootstrap.min.css';
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import About from "./containers/About";
+// import Nav from "./components/Nav";
 
-function App(){
-  return(
-    // <Router>
-    // <div>
-    //   <Switch>
-    //     <Route path="/" Component={Home} />
-    //   </Switch>
-    //   </div>
-    // </Router>
-    
-    <div>
-      <Nav />
-      <Home />
-    </div>
-  )
-}console.log("hello")
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div>
+          <Navbar />
+
+          {/* <Home /> */}
+
+          {/* <About /> */}
+
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/About" component={About} />
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
+}
+
+// console.log("hello");
 
 export default App;

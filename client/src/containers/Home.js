@@ -1,145 +1,234 @@
 import React, { Component } from "react";
-import Jumbotron from "../components/Jumbotron";
-import { Col, Row, Container } from "../components/Grid";
-import Card from "react-bootstrap/Card";
+// import Jumbotron from "../components/Jumbotron";
+import { Container } from "reactstrap";
+// import Image from "../components/assets/spacesky.jpg"
+import meI from "../components/assets/Me.jpg";
+// import Card from "react-bootstrap/Card";
 import { List } from "../components/List";
-import Navbar from '../components/NavBar'
+// import Navbar from "../components/NavBar";
+import Background from "../components/assets/Desert-Nights.jpg";
+// import { ParallaxProvider } from 'react-scroll-parallax';
+// import { Parallax } from 'react-scroll-parallax';
+import "../App.css";
+
 // import Button from 'react-bootstrap/Button';
 
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div style={{ backgroundImage: `url(${Background})` }}>
+        {/* <Navbar /> */}
+        {/* const ParallaxImage = () => ( */}
+        {/* <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+        <img src={Image} /> */}
 
-        <Jumbotron>
-        <Navbar />
-          <p>Brandon Fields Portfolio</p>
-          <br />
-          <p>
+        <div
+          className="jumbotron"
+          style={{
+            color: "white",
+            textAlign: "center",
+            margin: "auto",
+            backgroundImage: `url(${Background})`
+          }}
+        >
+          <p>The Portfolio of Brandon Fields</p>
+          {/* <br /> */}
+          {/* <p>
             {" "}
             Thank you for taking the time to check out my portfolio, if you have
             any questions please don't hesitate to contact me!{" "}
-          </p>
-        </Jumbotron>
-        <Container fluid>
-          <Row>
-            <Col size="md-6" id="header">
-            <div >
-              <h4>FULL-STACK Software Developer from Atlanta, GA.</h4>
-              <li>
-                <b>Brandon Fields</b>
-              </li>
-              <li>
-                <b>02-May-1991</b>
-              </li>
-              <li>
-                <b> 216-952-1738 </b>
-              </li>
-              <li>
-                <b>Atlanta, Georgia </b>
-              </li>
-              <li>
-                <b>
-                  <a href="mailto:Brandonfields2010@gmail.com">
-                    {" "}
-                    Brandonfields2010@gmail.com
-                  </a>{" "}
-                </b>
-              </li>
-              <li>
-                <b>
-                  <a href="https://github.com/Bfields216">B-Fields - Github</a>
-                </b>
-              </li>
+          </p> */}
+          {/* <br/>
+          <br/>
+          <br/> */}
+          <br />
+          <br />
+          <br />
 
-              <a href="https://drive.google.com/file/d/1wW8Q3gQYmWGft4FhzyvGqLIf-Ov5gwnT/view?usp=sharing">
-                <h4>
-                  <font>
-                    <font>View My CV Here</font>
-                  </font>
-                </h4>
-              </a>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-        <div>
-          <Container fluid>
-            <Row>
-              <Col size="md-9">
-                <p>
-                  My name is Brandon Fields I am from Cleveland Ohio. Full Stack
-                  Developer looking for his start in the Tech Industry. Proven
-                  skills in multitasking and handling crisis management.
-                  Increased utilization of Google Apps for the benefit of the
-                  DeKalb County Board of Commissioners. Managed day to day
-                  operations for a County Commissioner that had over 740,000
-                  citizens, conflict resolution was a key to managing requests
-                  and calls. Highly proficient in Microsoft Office, HTML, CSS,
-                  Javascript, Jquery, NodeJS, AJAX. Excellent communicator who
-                  is able to understand any audience and effectively connect
-                  with all levels of management. Georgia Tech Full Stack
-                  Development Bootcamp Certification.
-                  <br />
-                  <strong>
-                    Check The Portoflio on the bottom of this page to see games
-                    I've created.
-                  </strong>
-                </p>
-                <Card style={{ width: "18rem" }}>
-                  {/* <Card.Img variant="top" src="/" /> */}
-                  <Card.Body>
-                    <Card.Title>Quick Facts About Me</Card.Title>
-                    <Card.Text>
-                      Interested in exploring careers in Full Stack Development
-                      and working freelance.
-                    </Card.Text>
-                    {/* <Button variant="primary">Go somewhere</Button> */}
-                  </Card.Body>
-                </Card>
-                <br />
-              </Col>
-            </Row>
-          </Container>
+          <img
+            src={meI}
+            alt="me"
+            style={{ width: "29%", height: "379px", border: "solid" }}
+          />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
-        <h1>Portfolio</h1>
-        <List>
+        <Container
+          style={{
+            border: "solid",
+            margin: "auto",
+            textAlign: "center",
+            color: "white"
+          }}
+        >
+          {/* <Row>
+            <Col  > */}
           <div>
-            <a href="https://bfields216.github.io/unit-4-game/">
-              <h3>The Crystal Collector Game</h3>
+            <h4>FULL-STACK Software Developer from Atlanta, GA.</h4>
+            <li>
+              <b>Brandon Fields</b>
+            </li>
+            <li>
+              <b>02-May-1991</b>
+            </li>
+            {/* <li>
+              <b> 216-952-1738 </b>
+            </li> */}
+            <li>
+              <b>Atlanta, Georgia </b>
+            </li>
+
+            <li>
+              <a href="mailto:Brandonfields2010@gmail.com">
+                {" "}
+                Brandonfields2010@gmail.com
+              </a>{" "}
+            </li>
+
+            <li>
+              <a href="https://github.com/Bfields216">B-Fields - Github</a>
+            </li>
+
+            <a href="https://drive.google.com/file/d/1wW8Q3gQYmWGft4FhzyvGqLIf-Ov5gwnT/view?usp=sharing">
+              <h4>
+                <font>
+                  <font>View My CV Here</font>
+                </font>
+              </h4>
+            </a>
+          </div>
+          <section>
+            <h3>My Skills</h3>
+            <div>
+              <h4>
+                <font>
+                  <font>
+                    Web development / Full Stack Development / Front End / Back
+                    End{" "}
+                  </font>
+                </font>
+              </h4>
+              <p>
+                <font>
+                  <font>
+                    {" "}
+                    Htlm5 / Css3 / Boostrap / Git / Github / Javascript / Jquery
+                    / Frameworks / React.js / Node.js / MySQL / Express /
+                    Handlebars / Sequelize / Mongo-Mongoose / Java{" "}
+                  </font>
+                </font>
+              </p>
+            </div>
+          </section>
+        </Container>
+        {/* </Parallax> ); */}
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div>
+          <br />
+          <Container fluid>
+            <h1 style={{ textAlign: "center", margin: "auto", color: "white" }}>
+              About Me
+            </h1>
+            <p
+              className="row"
+              style={{ textAlign: "center", margin: "auto", color: "white" }}
+            >
+              My name is Brandon Fields I am from Cleveland Ohio. Full Stack
+              Developer looking for his start in the Tech Industry. Proven
+              skills in multitasking and handling crisis management. Increased
+              utilization of Google Apps for the benefit of the DeKalb County
+              Board of Commissioners. Managed day to day operations for a County
+              Commissioner that had over 740,000 citizens, conflict resolution
+              was a key to managing requests and calls. Highly proficient in
+              Microsoft Office, HTML, CSS, Javascript, Jquery, NodeJS, AJAX,
+              Github, Reactjs. Excellent communicator who is able to understand
+              any audience and effectively connect with all levels of
+              management. Georgia Tech Full Stack Development Bootcamp
+              Certification.
+              <br />
+              <br />
+              <strong style={{ margin: "auto" }}>
+                Check The Portoflio on the bottom of this page to see games I've
+                created.
+              </strong>
+              <br />
+            </p>
+            <br />
+            {/* <Card style={{ width: "18rem", margin:'auto' }}>
+              
+              <Card.Body>
+                <Card.Title>Quick Facts About Me</Card.Title>
+                <Card.Text>
+                  Interested in exploring careers in Full Stack Development and
+                  working freelance.
+                </Card.Text>
+                
+              </Card.Body>
+            </Card> */}
+            {/* <br /> */}
+          </Container>{" "}
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div style={{ textAlign: "center", color: "white" }}>
+          <h1> Portfolio </h1>
+        </div>
+        <br />
+        <br />
+        <List>
+          <div style={{ color: "white" }}>
+            <a href="https://bfields216.github.io/project3/">
+              <h3>Drinks on Us</h3>
             </a>
 
             <p>
-              I built a game that allows you to click on crystals for points -
-              CrystalsCollector Game (Recommended) ![Crystal
-              Collector](Images/1-CrystalCollector.jpg) 1. [Watch the
-              demo](https://youtu.be/yNI0l2FMeCk). 2. The player will have to
-              guess the answer, just like in Word Guess. This time, though, the
-              player will guess with numbers instead of letters. 3. Here's how
-              the app works: * The app should show the number of games the
-              player wins and loses. To that end, do not refresh the page as a
-              means to restart the game.
+              Drinkson is an mobile web app that allows users to checkin to a
+              bar and order drinks via the mobile app with the tap of your
+              finger. You can alsosedn drinks to other users that have checked
+              in to the same location. - pay with your phone - apple pay, paypal
+              - card on file during siginup - age verification: add drivers
+              licences number, birthdate and full name - Covience, not having to
+              wait in line and spend more time with the people you are with,
+              promotes more human interaction, self service option, payment
+              security so bars don't have hold debit cards. Research- Chickfila
+              app, Starbucks app, Uber Eats self service options gives you
+              instant access to order drinks from a nearby bar without the
+              hassle of having to wait inline all through the click of a button
+              allows users to send drins to other users on the app that are in
+              that same location throught check-ins.
             </p>
           </div>
-          <div>
-            <a href="https://bfields216.github.io/TriviaGame/">
+          <div style={{ color: "white" }}>
+            <a href="https://intense-basin-17439.herokuapp.com/">
               <h3>
-                <b>Trial Trivia</b>
+                <b>Friend-Finder</b>
               </h3>
             </a>
 
             <p>
-              A game I built. - Basic Quiz (Timed Form)
-              ![Basic](Images/1-basic.jpg) * You'll create a trivia form with
-              multiple choice or true/false options (your choice). * The player
-              will have a limited amount of time to finish the quiz. * The game
-              ends when the time runs out. The page will reveal the number of
-              questions that players answer correctly and incorrectly. * Don't
-              let the player pick more than one answer per question. * Don't
-              forget to include a countdown timer.
+              In this activity, you'll build a compatibility-based
+              "FriendFinder" application -- basically a dating app. This
+              full-stack site will take in results from your users' surveys,
+              then compare their answers with those from other users. The app
+              will then display the name and picture of the user with the best
+              overall match. You will use Express to handle routing. Make sure
+              you deploy your app to Heroku so other users can fill it out.
             </p>
           </div>
-          <div>
+          <div style={{ color: "white" }}>
             <a href="https://bfields216.github.io/Giphy-Homework/">
               <h3>
                 <b>NBA Giphy Search</b>
@@ -160,7 +249,7 @@ class Home extends Component {
               Pages.
             </p>
           </div>
-          <div>
+          <div style={{ color: "white" }}>
             <a href="https://bfields216.github.io/Train-Schedule/">
               <h3>
                 <b>Train Schedule</b>
@@ -178,7 +267,7 @@ class Home extends Component {
               times. * Styling and theme are completely up to you. Get Creative!
             </p>
           </div>
-          <div>
+          <div style={{ color: "white" }}>
             <a href="https://bfields216.github.io/RealTime/">
               <h3>
                 <b>Real-Time</b>
@@ -190,46 +279,12 @@ class Home extends Component {
               information based on their geolocation. The user will have a map
               of their current locaiton provided via google maps that is
               constantly displayed, along with the 10 day local weather
-              forecast, for the user. Below the map and weather, the user will
-              have 5 buttons to choose from: "Restaurants", "Places to Stay",
-              "Current Events", "Local News", and "Emergency Services". This
-              application is useful because it provides a one stop shop for
-              current information pertaining to one's geolocation. A user will
-              no longer have to navigate the web to locate all these different
-              pieces of information, but rather have them available at the click
-              of a button. It is perfect for anyone who is traveling to a
-              locaiton foreign to them, and would like to have a general idea of
-              the area they are visiting. Nonetheless, it could even be used by
-              someone who is local, and just wants to stay up to date with
-              everything in the area. This application is maintained and
+              forecast, for the user. This application is maintained and
               supported by our RealTime Team: Mutahir Chaudhry, Brandon Fields,
               Ryan Hart, Jeremiah Graham.
             </p>
           </div>
         </List>
-        <section>
-          <h1>My Skills</h1>
-          <div>
-            <h3>
-              <font>
-                <font>
-                  Web development / Full Stack Development / Front End / Back
-                  End{" "}
-                </font>
-              </font>
-            </h3>
-            <p>
-              <font>
-                <font>
-                  {" "}
-                  Htlm5 / Css3 / Boostrap / Git / Javascript / Jquery /
-                  Frameworks / React.js / Node.js / MySQL / Express / Handlebars
-                  / Sequelize / Mongo-Mongoose / Java{" "}
-                </font>
-              </font>
-            </p>
-          </div>
-        </section>
       </div>
     );
   }
