@@ -5,6 +5,7 @@ import { Container } from "reactstrap";
 import meI from "../components/assets/Me.jpg";
 // import Card from "react-bootstrap/Card";
 import { List } from "../components/List";
+// import Nav from "../components/Nav"
 import Navbar from "../components/NavBar";
 import Background from "../components/assets/Desert-Nights.jpg";
 import Zoom from 'react-reveal/Zoom';
@@ -20,7 +21,8 @@ import "../App.css";
 class Home extends Component {
   render() {
     return (
-      <div style={{ backgroundImage: `url(${Background})` }}>
+      <div style={{ backgroundImage: `url(${Background})`}}>
+       
         <Navbar />
         {/* const ParallaxImage = () => ( */}
         {/* <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">

@@ -5,13 +5,16 @@ import { Nav, NavItem, NavLink } from "reactstrap";
 import { GoMarkGithub } from "react-icons/go";
 import { AiFillLinkedin } from "react-icons/ai";
 import { FaHome } from "react-icons/fa";
+// import Sidebar from 'react-bootstrap-sidebar';
 
 
 // Using the datalist element we can create autofill suggestions based on the props.breeds array
 function Navbar(props) {
+  
   return (
+    
     <div style={{backgroundcolor:'transparent'}}>
-      <Nav tabs>
+      <Nav>
         <NavItem>
         <NavLink
          style={{backgroundcolor: 'transparent', width: '72px;', height: '50px;' }}   href="/" active><FaHome />
