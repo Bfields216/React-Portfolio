@@ -206,7 +206,7 @@ class Home extends Component {
         <br />
         <List>
           <div style={{ color: "white" }}>
-            <a href="https://bfields216.github.io/project3/">
+            <a href="http://drinkson.herokuapp.com/">
               <h3>Drinks on Us</h3>
             </a>
 
