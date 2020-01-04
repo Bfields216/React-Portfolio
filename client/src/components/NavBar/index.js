@@ -13,27 +13,19 @@ function Navbar(props) {
   
   return (
     
-    <div style={{backgroundcolor:'transparent'}}>
+    <div >
       <Nav>
         <NavItem>
         <NavLink
-         style={{backgroundcolor: 'transparent', width: '72px;', height: '50px;' }}   href="/" active><FaHome />
+            href="/" active><FaHome />
            
           </NavLink>
         </NavItem>
-        {/* <NavItem>
-          <NavLink href="/About" active>
-            About
-          </NavLink>
-        </NavItem> */}
-        {/* <NavItem>
-          <NavLink href="/Register" active>
-            Contact
-          </NavLink> */}
-        {/* </NavItem> */}
+        
         <NavLink 
           href="https://www.linkedin.com/in/brandon-fields-932015b1/"
           active
+          
         ><AiFillLinkedin/>
           
         </NavLink>
