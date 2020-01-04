@@ -223,7 +223,7 @@ class Home extends Component {
                 through check-ins.
               </p>
             </div>
-            <div style={{ color: "white" }}>
+            {/* <div style={{ color: "white" }}>
               <a href="https://intense-basin-17439.herokuapp.com/">
                 <h3>
                   <b>Friend-Finder</b>
@@ -239,14 +239,10 @@ class Home extends Component {
                 overall match. You will use Express to handle routing. Make sure
                 you deploy your app to Heroku so other users can fill it out.
               </p>
-            </div>
-            <div style={{ color: "white" }}>
+            </div> */}
+            {/* <div style={{ color: "white" }}>
               <a href="https://bfields216.github.io/Giphy-Homework/">
-                <h3>
-                  <b>NBA Giphy Search</b>
-                </h3>
-              </a>
-              {/* <p><strong>NBA Giphy Search </strong></p>  */}
+              
               <p>
                 A search engine using Giphy to find NBA players. - 1. **Hit the
                 GIPHY API**. * Fool around with the GIPHY API. [Giphy
@@ -261,15 +257,15 @@ class Home extends Component {
                 to https`**, or the app may not work properly when deployed to
                 Github Pages.
               </p>
-            </div>
-            <div style={{ color: "white" }}>
-              <a href="https://bfields216.github.io/Train-Schedule/">
+            </div> */}
+            {/* <div style={{ color: "white" }}> */}
+              {/* <a href="https://bfields216.github.io/Train-Schedule/">
                 <h3>
                   <b>Train Schedule</b>
                 </h3>
               </a>
               {/* <!-- <p><strong>Train Schedule</strong></p> --> */}
-              <p>
+              {/* <p>
                 Here is a train schedule I built manipulating API Keys and
                 Jquery. - Make sure that your app suits this basic spec: * When
                 adding trains, administrators should be able to submit the
@@ -279,8 +275,8 @@ class Home extends Component {
                 relative to the current time. * Users from many different
                 machines must be able to view same train times. * Styling and
                 theme are completely up to you. Get Creative!
-              </p>
-            </div>
+              </p> */}
+            {/* </div>  */}
             <div style={{ color: "white" }}>
               <a href="https://bfields216.github.io/RealTime/">
                 <h3>
