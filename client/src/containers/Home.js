@@ -223,60 +223,6 @@ class Home extends Component {
                 through check-ins.
               </p>
             </div>
-            {/* <div style={{ color: "white" }}>
-              <a href="https://intense-basin-17439.herokuapp.com/">
-                <h3>
-                  <b>Friend-Finder</b>
-                </h3>
-              </a>
-
-              <p>
-                In this activity, you'll build a compatibility-based
-                "FriendFinder" application -- basically a dating app. This
-                full-stack site will take in results from your users' surveys,
-                then compare their answers with those from other users. The app
-                will then display the name and picture of the user with the best
-                overall match. You will use Express to handle routing. Make sure
-                you deploy your app to Heroku so other users can fill it out.
-              </p>
-            </div> */}
-            {/* <div style={{ color: "white" }}>
-              <a href="https://bfields216.github.io/Giphy-Homework/">
-              
-              <p>
-                A search engine using Giphy to find NBA players. - 1. **Hit the
-                GIPHY API**. * Fool around with the GIPHY API. [Giphy
-                API](https://developers.giphy.com/docs/). * Be sure to read
-                about these GIPHY parameters (hint, hint): * `q` * `limit` *
-                `rating` * Like many APIs, GIPHY requires developers to use a
-                key to access their API data. To use the GIPHY API, you'll need
-                a GIPHY account (don't worry, it's free!) and then obtain an API
-                Key by [creating an
-                app](https://developers.giphy.com/dashboard/?create=true). *
-                Make sure you switch the protocol in the query URL from **`http
-                to https`**, or the app may not work properly when deployed to
-                Github Pages.
-              </p>
-            </div> */}
-            {/* <div style={{ color: "white" }}> */}
-              {/* <a href="https://bfields216.github.io/Train-Schedule/">
-                <h3>
-                  <b>Train Schedule</b>
-                </h3>
-              </a>
-              {/* <!-- <p><strong>Train Schedule</strong></p> --> */}
-              {/* <p>
-                Here is a train schedule I built manipulating API Keys and
-                Jquery. - Make sure that your app suits this basic spec: * When
-                adding trains, administrators should be able to submit the
-                following: * Train Name * Destination * First Train Time -- in
-                military time * Frequency -- in minutes * Code this app to
-                calculate when the next train will arrive; this should be
-                relative to the current time. * Users from many different
-                machines must be able to view same train times. * Styling and
-                theme are completely up to you. Get Creative!
-              </p> */}
-            {/* </div>  */}
             <div style={{ color: "white" }}>
               <a href="https://bfields216.github.io/RealTime/">
                 <h3>
