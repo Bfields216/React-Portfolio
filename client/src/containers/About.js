@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
-import '../App.css'
-// import Navbar from '../components/NavBar';
+import '../App.css';
+import Sidebar from '../components/sidebar';
+
+// import { Sidebar } from 'react-bootstrap-sidebar';
+
+
+
 
 class About extends Component {
     render() {
         return (
-            
-            <div>
-            {/* <Navbar /> */}
-                <h1>Hi Welcome to my About Section</h1>
-            </div>
-        );
+           <Sidebar/>
+           
+           
+        )
+        
     }
 }
 
