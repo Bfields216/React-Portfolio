@@ -17,7 +17,7 @@ class App extends Component {
           {/* <Navbar /> */}
           <Sidebar/>
 
-          {/* <Home /> */}
+         
 
           {/* <About /> */}
 

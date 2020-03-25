@@ -1,16 +1,36 @@
 
 #app{
-    background-color: maroon;
-    z-index: 2;
-    /* position: absolute; */
-    top: 0px;
-    bottom: 0px;
-    transition: -webkit-transform 0.3s ease-out 0s;
-    will-change: transform;
+    background-color: #80000080;
+    /* z-index: 2; */
+    /* position: unset; */
+    /* will-change: transform; */
     overflow-y: auto;
-    left: 0px;
-    transform: translateX(0%);
-    box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 4px;
-       
+    /* left: 0px; */
+    /* transform: translateX(0%); */
+    /* box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 4px; */
+    /* margin: unset; */
+    width: 500px;
+    /* width: 2000px; */
+    height: -webkit-fill-available;
 
+   
+        
+        color: beige;
+        /* margin-left: 500px; */
+        padding: 15px;
+    }
+    #home{
+        margin-top: -70px;
+        margin-left: auto;
+    }
+    #Git{
+        margin-left: 50px;
+        margin-top: -55px;
+    }
+    #link{
+        margin-left: 100px;
+        margin-top: -55px;
+    }
+    #icon{
+        margin-top: 150px;
     }

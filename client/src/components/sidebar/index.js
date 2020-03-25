@@ -69,44 +69,43 @@ class App extends React.Component {
       <Sidebar 
         sidebar={
           <div id='app'>
-            <h1>Welcome to Brandon Fields Port</h1>
-            
+            <h1 id="header">Welcome to Brandon Fields Port</h1>
+            {/* <Link to="/About">About</Link> */}
     <img
               src={meI}
               alt="me"
-              style={{ width: "19%",  border: "solid" , borderRadius: "30%", marginLeft: "6%" }}
+              style={{ width: "17%",  border: "solid" , borderRadius: "30%", marginLeft: "5%" }}
             />
           
             <br/>
-             <ul>
-             <li>
-             
+            
+             <div id='icon'>
                 <Link href="/" active>
-                  <h1>
+                  <h1 id="home">
                     <FaHome />
                   </h1>
                 </Link>
-              </li>
               
-            <li>
+              
+            
             <Link a href="https://github.com/Bfields216">
-              <h1>
+              <h1 id='Git'> 
                 <GoMarkGithub />
               </h1>
-            </Link></li>
+            </Link>
             <Link a href="https://www.linkedin.com/in/brandon-fields-932015b1/">
-              <h1>
+              <h1 id="link">
                 <AiFillLinkedin />
               </h1>{" "}
-            </Link>
-          </ul></div>
+            </Link></div>
+          </div>
         }
         open={this.state.sidebarOpen}
         onSetOpen={this.onSetSidebarOpen}
-        styles={{ sidebar: { position: "" }  }}
+        // styles={{ sidebar: { position: "unset" }  }}
       >
         <button onClick={() => this.onSetSidebarOpen(true)}>
-          Open sidebar
+          <p>Open sidebar</p>
         </button>
       </Sidebar>
     );
