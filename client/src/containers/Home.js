@@ -2,14 +2,15 @@ import React, { Component } from "react";
 // import Jumbotron from "../components/Jumbotron";
 import { Container } from "reactstrap";
 // import Image from "../components/assets/spacesky.jpg"
-import meI from "../components/assets/Me.jpg";
+// import meI from "../components/assets/Me.jpg";
 // import Card from "react-bootstrap/Card";
 import { List } from "../components/List";
 // import Nav from "../components/Nav"
-import Navbar from "../components/NavBar";
+// import Navbar from "../components/NavBar";
 import Background from "../components/assets/Desert-Nights.jpg";
 import Zoom from "react-reveal/Zoom";
 import Flip from "react-reveal/Flip";
+
 // import Roll from "react-reveal/Roll";
 
 // import { ParallaxProvider } from 'react-scroll-parallax';
@@ -17,12 +18,13 @@ import Flip from "react-reveal/Flip";
 import "../App.css";
 
 // import Button from 'react-bootstrap/Button';
+import Sidebar from '../components/sidebar/index';
 
 class Home extends Component {
   render() {
     return (
       <div style={{ backgroundImage: `url(${Background})` }}>
-        <Navbar />
+        {/* <Navbar /> */}
         {/* const ParallaxImage = () => ( */}
         {/* <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
         <img src={Image} /> */}
@@ -127,14 +129,14 @@ class Home extends Component {
           </Container>
           <br/>
           {/* </Parallax> ); */}
-          <div>
+          {/* <div>
           <img
               src={meI}
               alt="me"
               style={{ width: "29%",  border: "solid" , borderRadius: "50%", marginLeft: "36%" }}
             />
           </div>
-          <br />
+          <br /> */}
           <div>
             <br />
             <Container fluid>

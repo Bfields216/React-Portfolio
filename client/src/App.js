@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "react-bootstrap/Navbar";
 import Home from "./containers/Home";
 import About from "./containers/About";
+import Sidebar from "./components/sidebar";
 // import Nav from "./components/Nav";
 
 class App extends Component {
@@ -13,7 +14,8 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Navbar />
+          {/* <Navbar /> */}
+          <Sidebar/>
 
           {/* <Home /> */}
 

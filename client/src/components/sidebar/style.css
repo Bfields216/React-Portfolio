@@ -1,5 +1,16 @@
-.sidebar{
-    max-width: 640px;
+
+#app{
     background-color: maroon;
-    
-}
+    z-index: 2;
+    /* position: absolute; */
+    top: 0px;
+    bottom: 0px;
+    transition: -webkit-transform 0.3s ease-out 0s;
+    will-change: transform;
+    overflow-y: auto;
+    left: 0px;
+    transform: translateX(0%);
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 4px;
+       
+
+    }
